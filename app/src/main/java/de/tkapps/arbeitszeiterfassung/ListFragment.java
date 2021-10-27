@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import de.tkapps.arbeitszeiterfassung.databinding.FragmentSecondBinding;
+import de.tkapps.arbeitszeiterfassung.databinding.FragmentListBinding;
 
-public class SecondFragment extends Fragment {
+public class ListFragment extends Fragment {
 
-    private FragmentSecondBinding binding;
+    private FragmentListBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +21,7 @@ public class SecondFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentSecondBinding.inflate(inflater, container, false);
+        binding = binding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -32,8 +32,8 @@ public class SecondFragment extends Fragment {
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                NavHostFragment.findNavController(ListFragment.this)
+                        .navigate(R.id.action_SecondFragment_to_ThirdFragment);
             }
         });
     }
