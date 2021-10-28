@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="de.tkapps.arbeitszeiterfassung.HomeFragment"
-        android:label="@string/first_fragment_label"
+        android:label="Arbeitszeiterfassung"
         tools:layout="@layout/fragment_home">
 
         <action
@@ -18,7 +18,7 @@
     <fragment
         android:id="@+id/SecondFragment"
         android:name="de.tkapps.arbeitszeiterfassung.ListFragment"
-        android:label="@string/second_fragment_label"
+        android:label="Arbeitszeit Liste"
         tools:layout="@layout/fragment_list">
 
         <action
@@ -28,7 +28,7 @@
     <fragment
         android:id="@+id/ThirdFragment"
         android:name="de.tkapps.arbeitszeiterfassung.AddAndModifyFragment"
-        android:label="ThirdFragment"
+        android:label="Hinzufügen/Bearbeiten"
         tools:layout="@layout/fragment_add_and_modify">
 
         <action
