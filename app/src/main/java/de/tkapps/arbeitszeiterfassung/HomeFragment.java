@@ -147,6 +147,15 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        binding.btnListe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // for passing data into new fragment use bundles (https://stackoverflow.com/questions/59452243/android-navigation-component-pass-value-arguments-in-fragments)
+                Toast.makeText(getActivity(), "Open List", Toast.LENGTH_LONG).show();
+                NavHostFragment.findNavController(HomeFragment.this)
+                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+            }
+        });
     }
 
     @Override
