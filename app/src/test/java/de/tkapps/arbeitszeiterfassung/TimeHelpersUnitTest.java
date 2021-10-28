@@ -2,6 +2,8 @@ package de.tkapps.arbeitszeiterfassung;
 
 import org.junit.Test;
 import java.util.Date;
+import java.util.TimeZone;
+
 import de.tkapps.arbeitszeiterfassung.helpers.TimeHelpers;
 import static org.junit.Assert.assertEquals;
 
@@ -12,6 +14,8 @@ public class TimeHelpersUnitTest {
     public void saveStringToDate_isCorrect() {
         // expected date
         long time = 1633684797000L;
+
+        TimeZone.setDefault(TimeZone.getTimeZone("Europe/Berlin"));
         Date expectedDate = new Date(time);
 
         // actual date
@@ -25,6 +29,7 @@ public class TimeHelpersUnitTest {
     public void showStringToDate_isCorrect() {
         // expected date
         long time = 1633684797000L;
+        TimeZone.setDefault(TimeZone.getTimeZone("Europe/Berlin"));
         Date expectedDate = new Date(time);
 
         // actual date
@@ -41,6 +46,7 @@ public class TimeHelpersUnitTest {
 
         // actual string
         long time = 1633684797000L;
+        TimeZone.setDefault(TimeZone.getTimeZone("Europe/Berlin"));
         Date actualDate = new Date(time);
         String actualString = TimeHelpers.dateToSaveString(actualDate);
 
@@ -54,6 +60,7 @@ public class TimeHelpersUnitTest {
 
         // actual string
         long time = 1633684797000L;
+        TimeZone.setDefault(TimeZone.getTimeZone("Europe/Berlin"));
         Date actualDate = new Date(time);
         String actualString = TimeHelpers.dateToShowString(actualDate);
 
@@ -67,6 +74,7 @@ public class TimeHelpersUnitTest {
 
         // actual date difference
         long timeStart = 1633684797000L;
+        TimeZone.setDefault(TimeZone.getTimeZone("Europe/Berlin"));
         Date actualDateStart = new Date(timeStart);
         long timeEnd = 1633686597000L;
         Date actualDateEnd = new Date(timeEnd);
