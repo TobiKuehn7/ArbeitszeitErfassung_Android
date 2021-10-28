@@ -15,14 +15,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.6"
-                android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/txt_beginn_arbeitszeit"
@@ -30,7 +24,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="15dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="15dp"
                     android:text="Beginn: " />
 
                 <TextView
@@ -51,26 +45,6 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="15dp"
                     android:text="Arbeitszeit (netto): " />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.4"
-                android:layout_gravity="center_vertical"
-                android:layout_marginRight="15dp">
-
-                <Button
-                    android:id="@+id/moreInformationButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_rounded_blue"
-                    android:textColor="#FFF"
-                    android:text="Bearbeiten"
-                    android:onClick="openMoreInformation"/>
-
-            </LinearLayout>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
