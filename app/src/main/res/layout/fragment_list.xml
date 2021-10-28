@@ -22,7 +22,6 @@
         android:background="@drawable/button_rounded_blue"
         android:textColor="#FFF"
         android:layout_margin="10dp"
-        android:onClick="addWorkday"
         android:text="Nachtragen" />
 
     <ListView
