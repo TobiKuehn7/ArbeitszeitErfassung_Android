@@ -146,7 +146,7 @@ public class HomeFragment extends Fragment {
                 resetUIAfterBtn(1);
             }
         });
-        
+
     }
 
     @Override
