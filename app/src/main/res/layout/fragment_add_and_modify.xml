@@ -25,75 +25,54 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editTextDate"
+            android:id="@+id/editDateStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:focusableInTouchMode="false"
+            android:hint="Datum des Arbeitsbeginns"
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/editTextDate2"
+            android:id="@+id/editDateEnd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:ems="10"
-            android:inputType="date" />
+            android:inputType="date"
+            android:focusableInTouchMode="false"
+            android:hint="Datum des Arbeitsendes"/>
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkStartEndSameDay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:checked="true"
+            android:text="Arbeitsbeginn und -ende am selben Tag" />
 
         <EditText
-            android:id="@+id/editTextTime"
+            android:id="@+id/editTimeStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="time" />
+            android:inputType="time"
+            android:focusableInTouchMode="false"
+            android:hint="Arbeitsbeginn (z.B.: 09:00)"/>
 
         <EditText
-            android:id="@+id/editTextTime2"
+            android:id="@+id/editTimeEnd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="time" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="TextView" />
-
+            android:inputType="time"
+            android:focusableInTouchMode="false"
+            android:hint="Arbeitsende (z.B.: 17:00)"/>
 
 
     </LinearLayout>
 
     <Button
-    android:id="@+id/btn_save"
+    android:id="@+id/btnSave"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/button_rounded_blue"
